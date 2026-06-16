@@ -1,0 +1,1 @@
+ROCKET_LEAGUE_PROCESS_NAME = "RocketLeague.exe"
