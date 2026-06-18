@@ -1,0 +1,3 @@
+System design:
+
+Gamify limiting how much I can play rocket league. Everytime I like open rocket league some sort of screen will popup and like run through a series of tests and things to actually get me to rethink my decision and if I can prove to somethign that I am doing this after either doing enough work or like actually earning it, then I will be able to play for like an hour and then the game will automatically shut down and not let me reopen it for anohter certain amount of time.
