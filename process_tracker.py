@@ -1,4 +1,3 @@
-from constants import DEFAULT_ROCKET_LEAGUE_TIMEOUT_INTERVAL
 import psutil
 
 
