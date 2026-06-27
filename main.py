@@ -21,15 +21,14 @@ def launch_accountabilty_app() -> None:
     eligible_for_timeout = False
 
     while is_process_running(ROCKET_LEAGUE_PROCESS_NAME):
-        current_time = time.time()
-
-        if (eligible_for_timeout):
+        if eligible_for_timeout:
             close_process_by_name(ROCKET_LEAGUE_PROCESS_NAME)
             root.deiconify()
             root.mainloop()
             root.withdraw()
 
             time.sleep(DEFAULT_ROCKET_LEAGUE_TIMEOUT_INTERVAL)
+            eligible_for_timeout = False
         else:
             time.sleep(DEFAULT_ROCKET_LEAGUE_ALLOCATED_PLAY_TIME)
             eligible_for_timeout = True
