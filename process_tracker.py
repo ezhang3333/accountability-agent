@@ -18,6 +18,17 @@ def is_process_running(process_name: str) -> bool:
 
     return False
 
+def are_processes_running(process_names: list[str]) -> list[str]:
+    """
+    Uses is_process_running() to check if any of the processes are running and returns a list of strings if so
+    """
+    running_processes = []
+    for process_name in process_names:
+        if (is_process_running(process_name)):
+            running_processes.append(process_name)
+    
+    return running_processes
+
 def close_process(proc: psutil.Process) -> bool:
     """
     Close a process, false being returned means access was denied or process didn't exist
